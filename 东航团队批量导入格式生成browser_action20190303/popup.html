@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>东航团队批量导入格式生成</title>
+	<meta charset="utf-8">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="popup.js"></script>
+</head>
+	<body  style="width:500px">
+		<div class = "container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>东航团队批量导入格式生成</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-left">
+					<p>使用说明：</p>
+					<ul>
+					<li>只针对乘机证件为身份证有效，使用其他类型证件请手动输入</li>
+					<li>每位乘机人信息为一行，名字在前，身份证号码在后</li>
+					<li>可以自动消除逗号、冒号等字符</li>
+					<li class="text-danger">点击按钮后，会自动生成格式化后的信息并复制，点击东航页面的“批量导入”粘贴信息</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">			
+					<input type="text" class="form-control input-sm" id="airdate" placeholder="起飞日期，用于判断是否为儿童(示例：2019/03/01)">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<form role="form">
+						<div class="form-group">
+							<label for="inText">乘机人信息</label>
+							<textarea id="inText" class="form-control" rows="8" ></textarea>
+						</div>
+						<button id="format" type="button" class="btn btn-default">格式化并复制</button>	
+					</form>
+				</div>
+				<div class="col-xs-12">
+					<form role="form">
+						<div class="form-group">
+							<label for="outText">格式化后信息</label>
+							<textarea readonly id="outText" class="form-control" rows="3" ></textarea>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>

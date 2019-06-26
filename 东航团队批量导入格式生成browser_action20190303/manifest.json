@@ -1,0 +1,14 @@
+{
+  "name": "东航团队批量导入格式生成",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "东航团队批量导入格式生成",
+  "browser_action":
+    {
+        "default_icon": "logo.png",
+        "default_title": "东航团队批量导入格式生成",
+        "default_popup": "popup.html"
+    },
+   "permissions": ["activeTab"]
+  
+}

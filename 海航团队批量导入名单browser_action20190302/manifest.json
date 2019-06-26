@@ -1,0 +1,21 @@
+{
+  "name": "海航团队名单批量填写",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "海航团队",
+  "browser_action":
+    {
+        "default_icon": "logo.png",
+        "default_title": "海航团队名单批量填写",
+        "default_popup": "popup.html"
+    },
+  "content_scripts": [
+    {
+      "matches": ["https://gt.hnair.com/*"],
+      "js": ["jquery-3.3.1.min.js"],
+	  "all_frames": true
+    }
+	],
+   "permissions": ["activeTab"]
+  
+}

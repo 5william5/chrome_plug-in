@@ -1,0 +1,16 @@
+{
+  "name": "票友erp导出格式化（团队部）",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "票友erp导出格式化（团队部）",
+  "content_scripts": [
+    {
+      "matches": ["http://saibo.py-erp.com/Finance/*"],
+      "js": ["jquery-3.3.1.min.js","content.js","excel.js"],
+	  "all_frames": true
+	  
+    }
+	],
+   "permissions": ["activeTab"]
+  
+}

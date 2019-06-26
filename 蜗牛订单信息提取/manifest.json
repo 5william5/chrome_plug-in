@@ -1,0 +1,17 @@
+{
+  "name": "蜗牛订单提取",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "蜗牛订单提取",
+  "content_scripts": [
+    {
+      "matches": ["http://tpfuwu.51taopiao.cn/uipage/*"],
+      "js": ["jquery-3.3.1.min.js","content.js","clipboard.min.js","layer.js"],
+	  "css":["theme/default/layer.css"],
+	  "all_frames": true
+	  
+    }
+	],
+   "permissions": ["activeTab"]
+  
+}

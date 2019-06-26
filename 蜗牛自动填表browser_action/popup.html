@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>蜗牛乘机人自动填写</title>
+	<meta charset="utf-8">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="popup.js"></script>
+</head>
+	<body  style="width:500px">
+		<div class = "container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3>蜗牛乘机人自动填写</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-left">
+					<p>使用说明：</p>
+					<ul>
+					<li>只针对乘机证件为身份证有效，使用其他类型证件请手动输入</li>
+					<li>每位乘机人信息为一行，名字在前，身份证号码在后</li>
+					<li>可以自动消除逗号、冒号等字符</li>
+					<li><strong class="text-warning">填入完成后请做简单检查,检查完毕后请点击左侧“批量信息确认”按钮</strong></li>
+					<li>如果填入错误，需重新填入，<strong class="text-warning">请先删除左侧乘机人信息中的全部信息</strong>，否侧将造成错误结果</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">			
+					<input type="text" class="form-control input-sm" id="lxname" placeholder="请输入联系人名字">
+				</div>
+				<div class="col-xs-6">
+					<input type="text" class="form-control input-sm" id="lxphone" placeholder="请输入联系人电话">
+				</div>
+				<div class="col-xs-2">
+					<button id="lxsave" type="button" class="btn btn-default">保存</button>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<form role="form">
+						<div class="form-group">
+							<label for="inText">乘机人信息填入</label>
+							<textarea id="inText" class="form-control" rows="10" ></textarea>
+						</div>
+						<button id="format" type="button" class="btn btn-default">填入</button>	
+					</form>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>
